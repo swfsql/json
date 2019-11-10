@@ -24,7 +24,7 @@ ryu = "1.0"
 version = "1.0.60"
 package = "serde"
 git = "https://github.com/swfsql/serde"
-branch = "serde-custom-symbol"
+branch = "serde-custom-symbol-2"
 
 [dev-dependencies]
 automod = "0.1"
@@ -37,7 +37,7 @@ trybuild = "1.0"
 version = "1.0.0"
 package = "serde_derive"
 git = "https://github.com/swfsql/serde"
-branch = "serde-custom-symbol"
+branch = "serde-custom-symbol-2"
 
 [workspace]
 members = ["tests/crate"]
