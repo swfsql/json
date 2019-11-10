@@ -16,18 +16,28 @@ travis-ci = { repository = "serde-rs/json" }
 appveyor = { repository = "serde-rs/json" }
 
 [dependencies]
-serde = "1.0.60"
 indexmap = { version = "1.0", optional = true }
 itoa = "0.4.3"
 ryu = "1.0"
+
+[dependencies.serde]
+version = "1.0.60"
+package = "serde"
+git = "https://github.com/swfsql/serde"
+branch = "serde-custom-symbol"
 
 [dev-dependencies]
 automod = "0.1"
 rustversion = "1.0"
 serde_bytes = "0.11"
-serde_derive = "1.0"
 serde_stacker = "0.1"
 trybuild = "1.0"
+
+[dev-dependencies.serde_derive]
+version = "1.0.0"
+package = "serde_derive"
+git = "https://github.com/swfsql/serde"
+branch = "serde-custom-symbol"
 
 [workspace]
 members = ["tests/crate"]
